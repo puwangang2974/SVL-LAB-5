@@ -1,1 +1,14 @@
-
+| id                  | precondition                                  | input                     | postcondition                                                                                      |
+|---------------------|-----------------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------|
+| [1](operations.md)  | None                                          | None                      | A new list L exists with n = 0                                                                     |
+| [2](operations.md)  | L has been created                            | None                      | Returns true if n = 0, otherwise false; L is unchanged                                             |
+| [3](operations.md)  | L has been created                            | None                      | Returns n; L is unchanged                                                                          |
+| [4](operations.md)  | L has been created                            | element x                 | x is at index 0; all old elements shift one position right; n = n + 1                              |
+| [5](operations.md)  | L has been created                            | element x                 | x is at index n (old n); existing elements are unchanged; n = n + 1                                |
+| [6](operations.md)  | L has been created and 0 <= i <= n            | index i, element x        | x is at index i; elements from index i onward shift right; n = n + 1                               |
+| [7](operations.md)  | n > 0                                         | None                      | Element at index 0 is removed and returned; remaining elements shift left; n = n - 1               |
+| [8](operations.md)  | n > 0                                         | None                      | Element at index n - 1 is removed and returned; other elements are unchanged; n = n - 1            |
+| [9](operations.md)  | n > 0 and 0 <= i < n                          | index i                   | Element at index i is removed and returned; later elements shift left; n = n - 1                   |
+| [10](operations.md) | n > 0 and 0 <= i < n                          | index i                   | Returns the element at index i; L is unchanged                                                     |
+| [11](operations.md) | L has been created                            | element x                 | Returns the smallest index i where L[i] = x, or -1 if x is not in L; L is unchanged                |
+| [12](operations.md) | L has been created                            | None                      | All elements are removed; n = 0                                                                    |
